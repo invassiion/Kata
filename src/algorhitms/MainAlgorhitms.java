@@ -1,5 +1,6 @@
 package algorhitms;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -24,6 +25,19 @@ public class MainAlgorhitms {
         } else {
             System.out.println("Pattern found in the given text String at positions: " + foudIndexes.stream().map(Object::toString).collect(Collectors.joining(", ")));
         }
+
+
+        InsertionSort insertionSort = new InsertionSort();
+        int[] array =  new int[] {113,2,23,3435,66,5,343,6,8,9,0,5,654,7,6,45,3,345,67};
+        System.out.println("INSERTION SORT");
+        System.out.println("____________________");
+        System.out.println(Arrays.toString(insertionSort.insertionSort(array)));
+
+
+        MergeSort mergeSort  = new MergeSort();
+        array = mergeSort.mergeSort(array,113,67);
+        System.out.println(Arrays.toString(array));
+
     }
 
 
