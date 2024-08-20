@@ -1,7 +1,6 @@
-import kataPackage.KataCountingSheep;
-import kataPackage.KataDoubleArraySum;
-import kataPackage.KataLessThenN;
-import kataPackage.Solution;
+import kataPackage.*;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
@@ -47,5 +46,15 @@ public class Main {
         for (int i = 0; i < k; i++) {
             System.out.print(nums[i] + " ");
         }
+
+
+        KataInvertArray inverter = new KataInvertArray();
+        System.out.println("\n ____________________________");
+        int[] arrayToInvert = {1, 2, 3, 4, 5};
+        int[] arrayToInvert2 = {1,-2,-3,4,-5};
+
+
+        System.out.println(Arrays.toString(arrayToInvert) +" -> " + Arrays.toString(KataInvertArray.invert(arrayToInvert)));
+        System.out.println(Arrays.toString(arrayToInvert2) +" -> " + Arrays.toString(KataInvertArray.invert(arrayToInvert2)));
     }
 }
