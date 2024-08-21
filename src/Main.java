@@ -47,8 +47,6 @@ public class Main {
             System.out.print(nums[i] + " ");
         }
 
-
-        KataInvertArray inverter = new KataInvertArray();
         System.out.println("\n ____________________________");
         int[] arrayToInvert = {1, 2, 3, 4, 5};
         int[] arrayToInvert2 = {1,-2,-3,4,-5};
@@ -56,5 +54,9 @@ public class Main {
 
         System.out.println(Arrays.toString(arrayToInvert) +" -> " + Arrays.toString(KataInvertArray.invert(arrayToInvert)));
         System.out.println(Arrays.toString(arrayToInvert2) +" -> " + Arrays.toString(KataInvertArray.invert(arrayToInvert2)));
+
+
+        System.out.println("\n ____________________________");
+        System.out.println(KataOddCount.oddCount(15));
     }
 }
