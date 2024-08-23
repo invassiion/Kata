@@ -58,5 +58,11 @@ public class Main {
 
         System.out.println("\n ____________________________");
         System.out.println(KataOddCount.oddCount(15));
+
+
+        System.out.println("\n ____________________________");
+      KataString kataString = new KataString();
+        System.out.println( " Римская цифра  -> " + kataString.solution(9));
+
     }
 }
