@@ -64,5 +64,7 @@ public class Main {
       KataString kataString = new KataString();
         System.out.println( " Римская цифра  -> " + kataString.solution(9));
 
+        String str = "CamelCase";
+        System.out.println(kataString.camelCase(str));
     }
 }
