@@ -1,7 +1,9 @@
 package kataPackage;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Collectors;
 
 public class KataString {
     public static String greet(String name) {
@@ -29,5 +31,10 @@ public class KataString {
 
         }
         return res.toString();
+    }
+
+    public  String camelCase(String input) {
+    String[] arr = input.split("(?=[A-Z])");
+    return String.join(" ", arr);
     }
 }
