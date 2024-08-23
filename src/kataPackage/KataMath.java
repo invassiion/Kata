@@ -2,6 +2,7 @@ package kataPackage;
 
 import javax.xml.crypto.dsig.spec.XSLTTransformParameterSpec;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
 
@@ -38,5 +39,20 @@ public class KataMath {
            }
        }
        return sum;
+    }
+
+    public static double findUniq( double arr[]) {
+        HashMap<Double, Integer> frequencyMap = new HashMap<>();
+
+        for (double num : arr) {
+            frequencyMap.put(num,frequencyMap.getOrDefault(num, 0) + 1);
+        }
+        for (double num : arr) {
+            if (frequencyMap.get(num) == 1) {
+                return num;
+            }
+        }
+
+        return 0;
     }
 }
