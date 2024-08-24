@@ -1,5 +1,6 @@
 package kataPackage;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -36,5 +37,21 @@ public class KataString {
     public  String camelCase(String input) {
     String[] arr = input.split("(?=[A-Z])");
     return String.join(" ", arr);
+    }
+
+
+    public static int[] parse(String data) {
+        int n = 0;
+        ArrayList<Integer> arr = new ArrayList<>();
+        for (char c : data.toCharArray()) {
+            switch (c) {
+                case 'i' -> n++;
+                case 'd' -> n--;
+                case 's' -> n *= n;
+                case 'o' -> arr.add(n);
+                default -> { }
+            }
+        }
+        return arr.stream().mapToInt(i -> i).toArray();
     }
 }

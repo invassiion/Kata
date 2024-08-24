@@ -71,5 +71,8 @@ public class Main {
         System.out.println("\n ____________________________");
         System.out.println(KataMath.findUniq(new double[]{ 1, 1, 1, 2, 1, 1 }));
         System.out.println(KataMath.findUniq(new double[]{ 0, 0, 0.55, 0, 0 }));
+
+        System.out.println("\n ____________________________");
+        System.out.println(Arrays.toString(KataString.parse("iiisdoso")));
     }
 }
