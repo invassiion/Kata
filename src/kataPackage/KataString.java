@@ -54,4 +54,10 @@ public class KataString {
         }
         return arr.stream().mapToInt(i -> i).toArray();
     }
+
+    public static String boolToWord(boolean b) {
+        if (b) {
+            return "Yes";
+        } else return "No";
+    }
 }
