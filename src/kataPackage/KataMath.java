@@ -55,4 +55,18 @@ public class KataMath {
 
         return 0;
     }
+
+    public int squareDigits(int n) {
+        StringBuilder result = new StringBuilder();
+
+        String numstr = String.valueOf(n);
+
+        for (char c : numstr.toCharArray()) {
+            int digit = Character.getNumericValue(c);
+
+            result.append(digit*digit);
+        }
+
+        return Integer.parseInt(result.toString());
+    }
 }
