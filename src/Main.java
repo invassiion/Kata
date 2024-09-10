@@ -74,5 +74,9 @@ public class Main {
 
         System.out.println("\n ____________________________");
         System.out.println(Arrays.toString(KataString.parse("iiisdoso")));
+
+
+        System.out.println("\n _______________________");
+        System.out.println(KataString.whoLikesIt("Alex", "Jacob", "Mark", "Max"));
     }
 }
